@@ -1,0 +1,5 @@
+The selected benchmarks and compilation scripts are in GoogleDrive mentioned in BFWindow/README.md.
+
+run directory contains the simulation scripts and results for paper "BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks".
+
+visual result report is available in BFWindow_Results.xlsx.

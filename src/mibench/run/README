@@ -1,0 +1,15 @@
+1. To fetch the orginal mibench v1.0
+./fetch_mibench_v1.0.pl
+
+2. To run the simulation for selected benchmark configured in sim_mibench.cfg
+
+./run_mibench.pl sim_mibench.cfg > r.log 2>&1 &
+
+This may take over 8 hours!
+
+3. To clean the templorary files generated when you want to pack the soure for release.
+
+./clean_mibench.pl sim_mibench.cfg > c.log 2>&1 &
+
+Jinli Rao <ary.xsnow@gmail.com>
+
