@@ -1,8 +1,8 @@
 # BFWindow
 
-**BFWindow** contains the implementation of *BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks* paper.
+**BFWindow** contains the implementation of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks`.
 
-Instead of messing the server environment, I resolve the tool dependency by manually installing them locally. If you have admin of your Linux, you can just use the 'yum' utils to update the libevent/ncurses/texinfo/cmake. For other tools like ocaml, CIL, SimpleScalar and GCC-ARM, they have to be built from the scratch for there are patches of BFW implemantion as mentioned in the paper.
+Instead of messing the server environment, I resolve the tool dependency by manually installing them locally. If you have admin of your Linux, you can just use the `yum` utils to update the libevent/ncurses/texinfo/cmake. For other tools like ocaml, CIL, SimpleScalar and GCC-ARM, they have to be built from the scratch for there are patches of BFW implemantion as mentioned in the paper.
 
 ## Environment
 
@@ -13,12 +13,13 @@ Instead of messing the server environment, I resolve the tool dependency by manu
 + texinfo: texinfo 4.7
 + cmake  : 3.2.2
 + OCaml  : ocaml 3.12.1, camlgraph 1.8.6, findlib 1.5.5
-+ CIL    : 1.7.3 (patched for BFWindow, please refer to *src/packages/cil-1.7.3*)
-+ SimpleScalar: simplesim-arm-0.2 (patched for BFWindow, please refer to *src/packages/simplesim-arm-0.2*)
-+ crosstool: 0.43 (patched for SimpleScalar/ARM, please refer to *src/packages/crosstool-0.43*)
-+ gcc-arm  : gcc-2.95.3,glibc-2.1.3,binutils-2.10(patched for BFWindow and build on crosstool 0.43, please refer to *src/packages/crosstool-0.43/download*)
-+ MiBench: mibench 1.0 (patched to remove unsupported system call in simplescalar, please refer to *src/packages/mibench-1.0*)
++ CIL    : 1.7.3 (patched for BFWindow, please refer to `src/packages/cil-1.7.3`)
++ SimpleScalar: simplesim-arm-0.2 (patched for BFWindow, please refer to `src/packages/simplesim-arm-0.2`)
++ crosstool: 0.43 (patched for SimpleScalar/ARM, please refer to `src/packages/crosstool-0.43`)
++ gcc-arm  : gcc-2.95.3,glibc-2.1.3,binutils-2.10(patched for BFWindow and build on crosstool 0.43, please refer to `src/packages/crosstool-0.43/download`)
++ MiBench: mibench 1.0 (patched to remove unsupported system call in simplescalar, please refer to `src/packages/mibench-1.0`)
 
+**Note**: All related source code used for paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive with the link: https://drive.google.com/folderview?id=0B3oN82OVo4hofkZOX2s3a0N6WWJ3LXVwN3pSLW1RbWdMOFh0M09MNkdsSXNxWGtFVlp5eTA&usp=sharing.
 ## Setup
 
 + Setup target directory
@@ -56,6 +57,20 @@ tar -zxvf cmake-3.2.3.tar.gz && cd cmake-3.2.3
 ./bootstrap --prefix=$BFW_INST && make && make install && cd ..
 ```
 
++ SimpleScalar Install
+```
+tar -jxvf simple-sim-arm-0.2.tar.bz2 && cd simple-sim-arm-0.2
+make config-arm
+make
+```
+
++ gcc-arm install
+```
+tar -jxvf crosstool-0.43.tar.bz2 && cd crosstool-0.43
+unset LD_LIBRARY_PATH
+./demo-arm-bfw.sh >& r.log &
+```
+
 + OCaml Install
 ```
 wget http://caml.inria.fr/pub/distrib/ocaml-3.12/ocaml-3.12.1.tar.bz2
@@ -75,12 +90,19 @@ make world.opt && make install && cd ..
     ```
   + ocamlgraph-1.8.6
   ```
-  TODO:
+  wget http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.6.tar.gz
+  tar -zxvf ocamlgraph-1.8.6.tar.gz && cd ocamlgraph-1.8.6
+  ./configure  --prefix=$BFW_INST
+  make && make install && make install-findlib && cd ..
+  ```
+  + cil-1.7.3
+  ```
+  tar -jxvf cil-1.7.3.tar.bz2 && cd cil-1.7.3
+  FORCE_PERL_PREFIX=1 ./configure --prefix=$BFW_INST
+  make
+  make install
   ```
 
-+ SimpleScalar Install
-
-+ gcc-arm install
 
 ## Simulation
 
@@ -88,8 +110,9 @@ make world.opt && make install && cd ..
 
 ## References
 
-
 ## License
 This work is free for education purpose. It's welcome to use them in your research or project. I'm happy to get emails for noticing of this work reusages.
 
-Jinli Rao <ary.xsnow@gmail.com>
+## Author
+
+Jinli Rao \<ary.xsnow@gmail.com\>
