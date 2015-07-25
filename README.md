@@ -74,7 +74,7 @@ tar -jxvf crosstool-0.43.tar.bz2 -C $BFW_INST && cd crosstool-0.43
 unset LD_LIBRARY_PATH
 ./demo-arm-bfw.sh >& r.log &
 ```
-**NOTE**: 
+  **NOTE**: 
   1. Please get the crosstool-0.43.tar.bz2 from the GoogleDrive manually which is equiped with patches.
 
   2. The built gcc compiler suit will be located in $BFW_INST/gcc-arm.
@@ -110,12 +110,13 @@ make world.opt && make install && cd ..
   make
   make install
   ```
-  **NOTE**: Please get the cil-1.7.3.tar.bz2 from the GoogleDrive manually which is equiped with patches.
+    **NOTE**: Please get the cil-1.7.3.tar.bz2 from the GoogleDrive manually which is equiped with patches.
 
 ## Validation
   + Setup
+  
   ```
-  export BFW_INST=*pathToyourInstalldirectory*
+  export BFW_INST=pathToyourInstalldirectory
   wget setup.sh
   soure $BFW_INST/setup.sh
   ```
@@ -124,7 +125,7 @@ make world.opt && make install && cd ..
   cd $ARMSS_HOME/libbfw/tests
   ./hello.sh
   ```
-  **NOTE**: manually check the run_hello.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
+    **NOTE**: manually check the run_hello.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
   
   + SimpleScalar/GCC ARM + BFWindow
   ```
@@ -132,7 +133,7 @@ make world.opt && make install && cd ..
   make -f Makefile.bfw bld
   make -f Makefile.bfw sim
   ```
-  **NOTE**: manually check the r.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
+    **NOTE**: manually check the r.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
 
 ## Simulation
 
@@ -150,7 +151,7 @@ make world.opt && make install && cd ..
       2. The result is automatically collected into `mibench_summary`.
 
 ## Results
-  The results of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are located in src/mibench/run. The result report is src/mibench/run/mibench_summary and the visual diagram is src/mibench/run/BFWindow_Results.xlsx. Please refer the src/mibench/README for more details.
+  The results of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are located in src/mibench/run. The result report is src/mibench/run/mibench_summary and the visual diagram is in src/mibench/run/BFWindow_Results.xlsx. Please refer the src/mibench/README for more details.
 
 ## References
   1. CIL: https://github.com/cil-project/
