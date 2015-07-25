@@ -1,0 +1,7 @@
+1. sa1core.cfg: the SA-1100 core configuration for SimpleScalar which is validated according to http://web.eecs.umich.edu/~taustin/code/arm/ANNOUNCE.ARM.
+
+2. sim_mibench.cfg: the simulation configuration to select target benchmarks and datasets.
+
+3. r.log: the simulation run log file.
+
+4. mibench_summary: the raw results for selected benchmarks.
