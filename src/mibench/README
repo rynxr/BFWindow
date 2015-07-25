@@ -1,5 +1,7 @@
-1. run directory contains the simulation scripts and results for paper "BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks".
+1. The directory 'run' contains the simulation scripts and results for paper "BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks".
 
-2. visual result report is available in BFWindow_Results.xlsx.
+2. The raw result report is run/res/mibench_summary.
 
-3. The complete set of mibench sources/scripts are in GoogleDrive mentioned in BFWindow/README.md.
+3. visual result report is available in BFWindow_Results.xlsx.
+
+4. The complete set of mibench sources/scripts are in GoogleDrive mentioned in BFWindow/README.md.
