@@ -150,7 +150,7 @@ make world.opt && make install && cd ..
       2. The result is automatically collected into `mibench_summary`.
 
 ## Results
-  The results of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are located in mibench/res.
+  The results of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are located in src/mibench/run. The result report is src/mibench/run/mibench_summary and the visual diagram is src/mibench/run/BFWindow_Results.xlsx. Please refer the src/mibench/README for more details.
 
 ## References
   1. CIL: https://github.com/cil-project/
