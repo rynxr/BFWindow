@@ -23,7 +23,9 @@ Instead of messing the server environment, I resolve the tool dependency by manu
 ## Setup
 
 + Setup target directory
-`export BFW_INST=*pathToyourInstalldirectory*
+```
+export BFW_INST=pathToyourInstalldirectory
+```
 
 + libevent Install
 ```
@@ -33,6 +35,7 @@ tar -zxvf libevent-2.0.19-stable.tar.gz && cd libevent-2.0.19-stable
 make && make install && cd ..
 export LD_LIBRARY_PATH=$BFW_INST/lib:$LD_LIBRARY_PATH
 ```
+
 + ncurse Install
 ```
 wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz
@@ -59,17 +62,18 @@ tar -zxvf cmake-3.2.3.tar.gz && cd cmake-3.2.3
 
 + SimpleScalar Install
 ```
-tar -jxvf simple-sim-arm-0.2.tar.bz2 && cd simple-sim-arm-0.2
+tar -jxvf simple-sim-arm-0.2.tar.bz2 -C $BFW_INST && cd $BFW_INST/simple-sim-arm-0.2
 make config-arm
 make
 ```
 
 + gcc-arm install
 ```
-tar -jxvf crosstool-0.43.tar.bz2 && cd crosstool-0.43
+tar -jxvf crosstool-0.43.tar.bz2 -C $BFW_INST && cd crosstool-0.43
 unset LD_LIBRARY_PATH
 ./demo-arm-bfw.sh >& r.log &
 ```
+**Note**: The built gcc compiler suit will be located in $BFW_INST/gcc-arm.
 
 + OCaml Install
 ```
@@ -103,16 +107,54 @@ make world.opt && make install && cd ..
   make install
   ```
 
+## Validation
+  + Setup
+  ```
+  export BFW_INST=*pathToyourInstalldirectory*
+  wget setup.sh
+  soure $BFW_INST/setup.sh
+  ```
+  + SimpleScalar/GCC ARM
+  ```
+  cd $ARMSS_HOME/libbfw/tests
+  ./hello.sh
+  ```
+  **NOTE**: manually check the run_hello.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
+  
+  + SimpleScalar/GCC ARM + BFWindow
+  ```
+  cd $ARMSS_HOME/libbfw/tests
+  make -f Makefile.bfw bld
+  make -f Makefile.bfw sim
+  ```
+  **NOTE**: manually check the r.log for the number 5050(5050=sum([0,100])=0+1+...+99+100).
 
 ## Simulation
 
+  + Mibench
+  ```
+  wget mibench.tar.gz
+  tar -zxvf mibench.tar.gz && cd mibench/run
+  soure $BFW_INST/setup.sh
+  ./run_mediabench.pl sim_mibench.cfg > r.log 2>&1 &
+  ```
+    **NOTE**:
+    
+      1. The simulation for selected benchmarks are configured in sim_mibench.cfg. Currently is takes several hours. Just have some rest before analyzing the results.
+      
+      2. The result is automatically collected into `mibench_summary`.
+
 ## Results
+  The results of paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are located in mibench/res.
 
 ## References
+  1. CIL: https://github.com/cil-project/
+  2. CIL Tutor: https://bitbucket.org/zanderso/cil-template
 
 ## License
 This work is free for education purpose. It's welcome to use them in your research or project. I'm happy to get emails for noticing of this work reusages.
 
 ## Author
 
-Jinli Rao \<ary.xsnow@gmail.com\>
+Jinli Rao <ary.xsnow@gmail.com>
+
