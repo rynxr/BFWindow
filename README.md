@@ -19,7 +19,7 @@ Instead of messing the server environment, I resolve the tool dependency by manu
 + gcc-arm  : gcc-2.95.3,glibc-2.1.3,binutils-2.10(patched for BFWindow and build on crosstool 0.43, please refer to `src/packages/crosstool-0.43/download`)
 + MiBench: mibench 1.0 (patched to remove unsupported system call in simplescalar, please refer to `src/packages/mibench-1.0`)
 
-**Note**: All related source code used for paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive with the link: https://drive.google.com/folderview?id=0B3oN82OVo4hofkZOX2s3a0N6WWJ3LXVwN3pSLW1RbWdMOFh0M09MNkdsSXNxWGtFVlp5eTA&usp=sharing.
+**Note**: All related source code used for paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive with the link: https://drive.google.com/folderview?id=0ByNFd40Fx5wzfktpa3hEMHlOSGlEUEdKTG1MelRWaTIzNndXMkJUTkJsN0g5aHhCdlpvRTQ&usp=sharing. 
 ## Setup
 
 + Setup target directory
@@ -66,6 +66,7 @@ tar -jxvf simple-sim-arm-0.2.tar.bz2 -C $BFW_INST && cd $BFW_INST/simple-sim-arm
 make config-arm
 make
 ```
+**NOTE**: Please get the crosstool-0.43.tar.bz2 from the GoogleDrive manually which is equiped with patches.
 
 + gcc-arm install
 ```
@@ -73,7 +74,10 @@ tar -jxvf crosstool-0.43.tar.bz2 -C $BFW_INST && cd crosstool-0.43
 unset LD_LIBRARY_PATH
 ./demo-arm-bfw.sh >& r.log &
 ```
-**Note**: The built gcc compiler suit will be located in $BFW_INST/gcc-arm.
+**NOTE**: 
+  1. Please get the crosstool-0.43.tar.bz2 from the GoogleDrive manually which is equiped with patches.
+
+  2. The built gcc compiler suit will be located in $BFW_INST/gcc-arm.
 
 + OCaml Install
 ```
@@ -106,6 +110,7 @@ make world.opt && make install && cd ..
   make
   make install
   ```
+  **NOTE**: Please get the cil-1.7.3.tar.bz2 from the GoogleDrive manually which is equiped with patches.
 
 ## Validation
   + Setup
