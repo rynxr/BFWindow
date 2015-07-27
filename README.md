@@ -19,7 +19,7 @@ Instead of messing the server environment, I resolve the tool dependency by manu
 + gcc-arm  : gcc-2.95.3,glibc-2.1.3,binutils-2.10(patched for BFWindow and build on crosstool 0.43, please refer to `src/packages/crosstool-0.43/download`)
 + MiBench: mibench 1.0 (patched to remove unsupported system call in simplescalar, please refer to `src/packages/mibench-1.0`)
 
-**Note**: All related source code used for paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive with the link: https://drive.google.com/folderview?id=0ByNFd40Fx5wzfktpa3hEMHlOSGlEUEdKTG1MelRWaTIzNndXMkJUTkJsN0g5aHhCdlpvRTQ&usp=sharing. 
+**Note**: All related source code used for paper `BFWindow: Speculatively Checking of Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive. If you are intrested, please email me with ary.xsnow@gmail.com. 
 ## Setup
 
 + Setup target directory
