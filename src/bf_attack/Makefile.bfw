@@ -1,0 +1,63 @@
+DATASET ?= small
+PFX     ?= ${ARMCC_HOME}/bin/arm-unknown-linux-gnu-
+GCC     ?= $(PFX)gcc
+STRIP   ?= $(PFX)strip
+OD      ?= $(PFX)objdump
+
+ifeq ($(PFX),)
+CILPFX   =
+CFLAGS   = -O0
+CC_DRV   = $(GCC)
+else
+CILPFX   = cilly --doBFWindow --save-temps --gcc=$(GCC)
+CFLAGS   = -O0 -static -I${BFW_HOME}
+#CC_DRV   = $(CILPFX)
+CC_DRV   = $(GCC)
+endif
+
+RPT_PFX  = BFW_RES
+TIMES   ?= 10
+
+BFW_MODE ?= none
+CFG      ?= sa1core.cfg
+
+ifeq ($(PFX),)
+SIM_PFX = 
+else
+SIM_PFX = sim-outorder -config $(CFG)
+endif
+
+.PHONY: all clean bld sim rpt sim_rpt
+
+all: clean bld sim rpt
+
+sim_rpt: sim rpt
+
+bld: bfw_prot bfw_lib bf_attack_o
+	$(CC_DRV) $(CFLAGS) bf_attack.o  -o simf -L${BFW_HOME} -lbfw -lm
+	$(OD) -D -S simf > simf.dmp
+
+bf_attack_o: bf_attack.c
+	$(CC_DRV) $(CFLAGS) -c $< -o bf_attack.o
+
+bld_native: bf_attack_o
+	$(CC_DRV) $(CFLAGS) bf_attack.o  -o simf -lm
+	$(OD) -D -S simf > simf.dmp
+
+sim: simf
+	@-rm -f *.log
+	$(SIM_PFX) ./simf > sim.bf_attack.log 2>&1
+
+rpt:
+	@echo "Info: nothing to do..."
+
+bfw_lib:
+	make -C ${BFW_HOME} PFX=$(PFX)
+
+bfw_prot:
+	cp -f bfw/$(BFW_MODE)_lbuf_prot.cfg bfwindow.cfg
+	cp -f bfw/$(BFW_MODE)_lbuf_prot.map bfwindow.map
+
+clean:
+	-make -C ${BFW_HOME} PFX=$(PFX) clean
+	-rm -rf simf *.dmp *.o *.log report *.cil.* *.diff bfwindow.cfg bfwindow.map output_* *.i build/*
