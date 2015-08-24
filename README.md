@@ -4,8 +4,6 @@
 
 Instead of messing the server environment, I resolve the tool dependency by manually installing them locally. If you have admin of your Linux, you can just use the `yum` utils to update the libevent/ncurses/texinfo/cmake. For other tools like ocaml, CIL, SimpleScalar and GCC-ARM, they have to be built from the scratch for there are patches of BFW implemantion as mentioned in the paper.
 
-Due to the Github project space limitation, I have to backup all the patched code tarballs to Google Drive. Please contact me if you are intrested.
-
 ## Environment
 
 + OS     : Redhat 6.5.1 32-bit
@@ -21,7 +19,8 @@ Due to the Github project space limitation, I have to backup all the patched cod
 + gcc-arm  : gcc-2.95.3,glibc-2.1.3,binutils-2.10(patched for BFWindow and build on crosstool 0.43, please refer to `src/packages/crosstool-0.43/download`)
 + MiBench: mibench 1.0 (patched to remove unsupported system call in simplescalar, please refer to `src/packages/mibench-1.0`)
 
-**Note**: All related source code used for paper `BFWindow: Speculatively Checking Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive. If you are intrested, please email me with ary.xsnow@gmail.com. 
+**Note**: Due to the Github project space limitation, all related source code used for paper `BFWindow: Speculatively Checking Data Property Consistency against Buffer Overflow Attacks` are backed up and can be retrived from Google Drive. If you are intrested, please email me with ary.xsnow@gmail.com. 
+
 ## Setup
 
 + Setup target directory
@@ -158,7 +157,7 @@ make world.opt && make install && cd ..
 ## Acknowledge
   Thanks to John Wilander for answering questions to RIPE testbed (https://github.com/johnwilander/RIPE/)!
 
-  Thanks to Jane Wu from Synopsys for her suggestions!
+  Thanks to Jane Wu from Synopsys for her valuable suggestions!
 
 ## References
   1. CIL: https://github.com/cil-project/
