@@ -155,6 +155,11 @@ make world.opt && make install && cd ..
 ## Results
   The results of paper `BFWindow: Speculatively Checking Data Property Consistency against Buffer Overflow Attacks` are located in src/mibench/run. The result report is src/mibench/run/mibench_summary and the visual diagram is in src/mibench/run/BFWindow_Results.xlsx. Please refer the src/mibench/README for more details.
 
+## Acknowledge
+  Thanks to John Wilander for answering questions to RIPE testbed (https://github.com/johnwilander/RIPE/)!
+
+  Thanks to Jane Wu from Synopsys for her suggestions!
+
 ## References
   1. CIL: https://github.com/cil-project/
   2. CIL Tutor: https://bitbucket.org/zanderso/cil-template
