@@ -163,6 +163,9 @@ make world.opt && make install && cd ..
 ## References
   1. CIL: https://github.com/cil-project/
   2. CIL Tutor: https://bitbucket.org/zanderso/cil-template
+  3. RIPE: https://github.com/johnwilander/RIPE
+  4. SimpleScalar-ARM: http://simplescalar.com/v4test.html
+  5. crosstool: http://kegel.com/crosstool
 
 ## License
 This work is free for education purpose. It's welcome to use them in your research or project. I'm happy to get emails for noticing of this work reusages.
