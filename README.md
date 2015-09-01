@@ -90,13 +90,13 @@ make world.opt && make install && cd ..
 
 + CIL Install
   + findlib-1.5.5
-    ```
-    wget http://download.camlcity.org/download/findlib-1.5.5.tar.gz
-    tar -zxvf findlib-1.5.5.tar.gz && cd findlib-1.5.5
-    mkdir `ocamlfind printconf destdir` || true
-    echo `ocamlfind printconf destdir` >> /slowfs/us01dwt2p320/jlrao/dev/bfw/lib/ocaml/ld.conf
-    cd ..
-    ```
+  ```
+  wget http://download.camlcity.org/download/findlib-1.5.5.tar.gz
+  tar -zxvf findlib-1.5.5.tar.gz && cd findlib-1.5.5
+  mkdir `ocamlfind printconf destdir` || true
+  echo `ocamlfind printconf destdir` >> /slowfs/us01dwt2p320/jlrao/dev/bfw/lib/ocaml/ld.conf
+  cd ..
+  ```
   + ocamlgraph-1.8.6
   ```
   wget http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.6.tar.gz
@@ -147,14 +147,14 @@ make world.opt && make install && cd ..
   ```
     **NOTE**:
     
-      1. The simulation for selected benchmarks are configured in sim_mibench.cfg. Currently is takes several hours. Just have some rest before analyzing the results.
+      1. The simulation for selected benchmarks are configured in sim_mibench.cfg. Currently it takes several hours. Just have some rest before analyzing the results.
       
       2. The result is automatically collected into `mibench_summary`.
 
 ## Results
   The results of paper `BFWindow: Speculatively Checking Data Property Consistency against Buffer Overflow Attacks` are located in src/mibench/run. The result report is src/mibench/run/mibench_summary and the visual diagram is in src/mibench/run/BFWindow_Results.xlsx. Please refer the src/mibench/README for more details.
 
-## Acknowledge
+## Acknowledges
   Thanks to John Wilander for answering questions to RIPE testbed (https://github.com/johnwilander/RIPE/)!
 
   Thanks to Jane Wu from Synopsys for her valuable suggestions!
