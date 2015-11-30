@@ -1,108 +1,102 @@
-BFW_RES:susan_smoothing(small,none):PASS:91165648
-BFW_RES:susan_edges(small,none):PASS:7989604
-BFW_RES:susan_corners(small,none):PASS:3559016
+BFW_RES:susan_smoothing(small,none):PASS:91179702
+BFW_RES:susan_edges(small,none):PASS:8011581
+BFW_RES:susan_corners(small,none):PASS:3583464
 
-BFW_RES:susan_smoothing(large,none):PASS:1387671554
-BFW_RES:susan_edges(large,none):PASS:232462465
-BFW_RES:susan_corners(large,none):PASS:78675049
+BFW_RES:susan_smoothing(large,none):PASS:1387672773
+BFW_RES:susan_edges(large,none):PASS:232487463
+BFW_RES:susan_corners(large,none):PASS:78696255
 
-BFW_RES:stringsearch(small,none):PASS:510424
+BFW_RES:stringsearch(small,none):PASS:522920
 
-BFW_RES:stringsearch(large,none):PASS:11127505
+BFW_RES:stringsearch(large,none):PASS:11141415
 
-BFW_RES:dijkstra(small,none):PASS:178834680
+BFW_RES:dijkstra(small,none):PASS:178855245
 
-BFW_RES:dijkstra(large,none):PASS:826061497
+BFW_RES:dijkstra(large,none):PASS:826104384
 
-BFW_RES:rijndael_enc(small,none):PASS:73519353
-BFW_RES:rijndael_dec(small,none):PASS:73141757
+BFW_RES:rijndael_enc(small,none):PASS:73501917
+BFW_RES:rijndael_dec(small,none):PASS:73093959
 
-BFW_RES:rijndael_enc(large,none):PASS:764482495
-BFW_RES:rijndael_dec(large,none):PASS:760473255
+BFW_RES:rijndael_enc(large,none):PASS:764231671
+BFW_RES:rijndael_dec(large,none):PASS:759843435
 
-BFW_RES:sha(small,none):PASS:44477047
+BFW_RES:sha(small,none):PASS:44490270
 
-BFW_RES:sha(large,none):PASS:462299573
+BFW_RES:sha(large,none):PASS:462312820
 
-BFW_RES:crc_32(small,none):PASS:138370391
 
-BFW_RES:crc_32(large,none):PASS:2688608192
 
-BFW_RES:fft(small,none):PASS:82992803
-BFW_RES:ifft(small,none):PASS:82992803
+BFW_RES:fft(small,none):PASS:83010796
+BFW_RES:ifft(small,none):PASS:83010796
 
-BFW_RES:fft(large,none):PASS:942627249
-BFW_RES:ifft(large,none):PASS:942627249
+BFW_RES:fft(large,none):PASS:942631361
+BFW_RES:ifft(large,none):PASS:942631361
 
-BFW_RES:susan_smoothing(small,light):PASS:91639166
-BFW_RES:susan_edges(small,light):PASS:8459849
-BFW_RES:susan_corners(small,light):PASS:4029230
+BFW_RES:susan_smoothing(small,light):PASS:91587582
+BFW_RES:susan_edges(small,light):PASS:8417762
+BFW_RES:susan_corners(small,light):PASS:3990907
 
-BFW_RES:susan_smoothing(large,light):PASS:1388142004
-BFW_RES:susan_edges(large,light):PASS:232934095
-BFW_RES:susan_corners(large,light):PASS:79142240
+BFW_RES:susan_smoothing(large,light):PASS:1388081198
+BFW_RES:susan_edges(large,light):PASS:232894227
+BFW_RES:susan_corners(large,light):PASS:79101452
 
-BFW_RES:stringsearch(small,light):PASS:588234
+BFW_RES:stringsearch(small,light):PASS:525131
 
-BFW_RES:stringsearch(large,light):PASS:11240040
+BFW_RES:stringsearch(large,light):PASS:11153152
 
-BFW_RES:dijkstra(small,light):PASS:178834794
+BFW_RES:dijkstra(small,light):PASS:178855102
 
-BFW_RES:dijkstra(large,light):PASS:826061611
+BFW_RES:dijkstra(large,light):PASS:826104364
 
-BFW_RES:rijndael_enc(small,light):PASS:73581102
-BFW_RES:rijndael_dec(small,light):PASS:73223732
+BFW_RES:rijndael_enc(small,light):PASS:73478262
+BFW_RES:rijndael_dec(small,light):PASS:73192982
 
-BFW_RES:rijndael_enc(large,light):PASS:764338458
-BFW_RES:rijndael_dec(large,light):PASS:760480861
+BFW_RES:rijndael_enc(large,light):PASS:763977590
+BFW_RES:rijndael_dec(large,light):PASS:760835984
 
-BFW_RES:sha(small,light):PASS:44536148
+BFW_RES:sha(small,light):PASS:44491995
 
-BFW_RES:sha(large,light):PASS:462358732
+BFW_RES:sha(large,light):PASS:462314575
 
-BFW_RES:crc_32(small,light):PASS:138370438
 
-BFW_RES:crc_32(large,light):PASS:2688608239
 
-BFW_RES:fft(small,light):PASS:82992805
-BFW_RES:ifft(small,light):PASS:82992805
+BFW_RES:fft(small,light):PASS:83010853
+BFW_RES:ifft(small,light):PASS:83010853
 
-BFW_RES:fft(large,light):PASS:942627397
-BFW_RES:ifft(large,light):PASS:942627397
+BFW_RES:fft(large,light):PASS:942631616
+BFW_RES:ifft(large,light):PASS:942631616
 
-BFW_RES:susan_smoothing(small,full):PASS:91825357
-BFW_RES:susan_edges(small,full):PASS:8709193
-BFW_RES:susan_corners(small,full):PASS:4206371
+BFW_RES:susan_smoothing(small,full):PASS:91623123
+BFW_RES:susan_edges(small,full):PASS:8453203
+BFW_RES:susan_corners(small,full):PASS:4025475
 
-BFW_RES:susan_smoothing(large,full):PASS:1388439559
-BFW_RES:susan_edges(large,full):PASS:233195296
-BFW_RES:susan_corners(large,full):PASS:79331531
+BFW_RES:susan_smoothing(large,full):PASS:1388117022
+BFW_RES:susan_edges(large,full):PASS:232926151
+BFW_RES:susan_corners(large,full):PASS:79133710
 
-BFW_RES:stringsearch(small,full):PASS:588053
+BFW_RES:stringsearch(small,full):PASS:524939
 
-BFW_RES:stringsearch(large,full):PASS:11239894
+BFW_RES:stringsearch(large,full):PASS:11152962
 
-BFW_RES:dijkstra(small,full):PASS:178834505
+BFW_RES:dijkstra(small,full):PASS:178855064
 
-BFW_RES:dijkstra(large,full):PASS:826061363
+BFW_RES:dijkstra(large,full):PASS:826104285
 
-BFW_RES:rijndael_enc(small,full):PASS:1906134095
-BFW_RES:rijndael_dec(small,full):PASS:1906480498
+BFW_RES:rijndael_enc(small,full):PASS:79580731
+BFW_RES:rijndael_dec(small,full):PASS:79171248
 
-BFW_RES:rijndael_enc(large,full):PASS:19166094484
-BFW_RES:rijndael_dec(large,full):PASS:19062870507
+BFW_RES:rijndael_enc(large,full):PASS:827615624
+BFW_RES:rijndael_dec(large,full):PASS:823051994
 
-BFW_RES:sha(small,full):PASS:257874854
+BFW_RES:sha(small,full):PASS:47688504
 
-BFW_RES:sha(large,full):PASS:2683205164
+BFW_RES:sha(large,full):PASS:495510787
 
-BFW_RES:crc_32(small,full):PASS:138370385
 
-BFW_RES:crc_32(large,full):PASS:2688608186
 
-BFW_RES:fft(small,full):PASS:83071067
-BFW_RES:ifft(small,full):PASS:83071067
+BFW_RES:fft(small,full):PASS:83013993
+BFW_RES:ifft(small,full):PASS:83013993
 
-BFW_RES:fft(large,full):PASS:942702661
-BFW_RES:ifft(large,full):PASS:942702661
+BFW_RES:fft(large,full):PASS:942641437
+BFW_RES:ifft(large,full):PASS:942641437
 

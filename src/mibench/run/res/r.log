@@ -1,361 +1,355 @@
 sim_config: sim_mibench.cfg
 
-index: 3<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(small,none):PASS:91165648
-BFW_RES:susan_edges(small,none):PASS:7989604
-BFW_RES:susan_corners(small,none):PASS:3559016
-
-index: 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-index: 4<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(large,none):PASS:1387671554
-BFW_RES:susan_edges(large,none):PASS:232462465
-BFW_RES:susan_corners(large,none):PASS:78675049
-
-index: 4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-index: 5<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(small,none):PASS:510424
-
-index: 5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-index: 6<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(large,none):PASS:11127505
-
-index: 6>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 index: 7<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(small,none):PASS:178834680
+BFW_RES:susan_smoothing(small,none):PASS:91179702
+BFW_RES:susan_edges(small,none):PASS:8011581
+BFW_RES:susan_corners(small,none):PASS:3583464
 
 index: 7>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 8<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(large,none):PASS:826061497
+BFW_RES:susan_smoothing(large,none):PASS:1387672773
+BFW_RES:susan_edges(large,none):PASS:232487463
+BFW_RES:susan_corners(large,none):PASS:78696255
 
 index: 8>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 9<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(small,none):PASS:73519353
-BFW_RES:rijndael_dec(small,none):PASS:73141757
+BFW_RES:stringsearch(small,none):PASS:522920
 
 index: 9>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 10<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(large,none):PASS:764482495
-BFW_RES:rijndael_dec(large,none):PASS:760473255
+BFW_RES:stringsearch(large,none):PASS:11141415
 
 index: 10>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 11<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(small,none):PASS:44477047
+BFW_RES:dijkstra(small,none):PASS:178855245
 
 index: 11>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 12<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(large,none):PASS:462299573
+BFW_RES:dijkstra(large,none):PASS:826104384
 
 index: 12>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 13<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(small,none):PASS:138370391
+BFW_RES:rijndael_enc(small,none):PASS:73501917
+BFW_RES:rijndael_dec(small,none):PASS:73093959
 
 index: 13>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 14<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(large,none):PASS:2688608192
+BFW_RES:rijndael_enc(large,none):PASS:764231671
+BFW_RES:rijndael_dec(large,none):PASS:759843435
 
 index: 14>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 15<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(small,none):PASS:82992803
-BFW_RES:ifft(small,none):PASS:82992803
+BFW_RES:sha(small,none):PASS:44490270
 
 index: 15>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 16<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(large,none):PASS:942627249
-BFW_RES:ifft(large,none):PASS:942627249
+BFW_RES:sha(large,none):PASS:462312820
 
 index: 16>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+index: 17<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
+
+index: 17>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 18<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
+
+index: 18>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 index: 19<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(small,light):PASS:91639166
-BFW_RES:susan_edges(small,light):PASS:8459849
-BFW_RES:susan_corners(small,light):PASS:4029230
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(small,none):PASS:83010796
+BFW_RES:ifft(small,none):PASS:83010796
 
 index: 19>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 20<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(large,light):PASS:1388142004
-BFW_RES:susan_edges(large,light):PASS:232934095
-BFW_RES:susan_corners(large,light):PASS:79142240
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=none CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(large,none):PASS:942631361
+BFW_RES:ifft(large,none):PASS:942631361
 
 index: 20>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-index: 21<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(small,light):PASS:588234
-
-index: 21>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-index: 22<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(large,light):PASS:11240040
-
-index: 22>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 index: 23<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(small,light):PASS:178834794
+BFW_RES:susan_smoothing(small,light):PASS:91587582
+BFW_RES:susan_edges(small,light):PASS:8417762
+BFW_RES:susan_corners(small,light):PASS:3990907
 
 index: 23>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 24<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(large,light):PASS:826061611
+BFW_RES:susan_smoothing(large,light):PASS:1388081198
+BFW_RES:susan_edges(large,light):PASS:232894227
+BFW_RES:susan_corners(large,light):PASS:79101452
 
 index: 24>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 25<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(small,light):PASS:73581102
-BFW_RES:rijndael_dec(small,light):PASS:73223732
+BFW_RES:stringsearch(small,light):PASS:525131
 
 index: 25>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 26<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(large,light):PASS:764338458
-BFW_RES:rijndael_dec(large,light):PASS:760480861
+BFW_RES:stringsearch(large,light):PASS:11153152
 
 index: 26>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 27<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(small,light):PASS:44536148
+BFW_RES:dijkstra(small,light):PASS:178855102
 
 index: 27>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 28<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(large,light):PASS:462358732
+BFW_RES:dijkstra(large,light):PASS:826104364
 
 index: 28>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 29<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(small,light):PASS:138370438
+BFW_RES:rijndael_enc(small,light):PASS:73478262
+BFW_RES:rijndael_dec(small,light):PASS:73192982
 
 index: 29>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 30<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(large,light):PASS:2688608239
+BFW_RES:rijndael_enc(large,light):PASS:763977590
+BFW_RES:rijndael_dec(large,light):PASS:760835984
 
 index: 30>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 31<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(small,light):PASS:82992805
-BFW_RES:ifft(small,light):PASS:82992805
+BFW_RES:sha(small,light):PASS:44491995
 
 index: 31>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 32<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(large,light):PASS:942627397
-BFW_RES:ifft(large,light):PASS:942627397
+BFW_RES:sha(large,light):PASS:462314575
 
 index: 32>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+index: 33<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
+
+index: 33>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 34<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
+
+index: 34>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 index: 35<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(small,full):PASS:91825357
-BFW_RES:susan_edges(small,full):PASS:8709193
-BFW_RES:susan_corners(small,full):PASS:4206371
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(small,light):PASS:83010853
+BFW_RES:ifft(small,light):PASS:83010853
 
 index: 35>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 36<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/automotive/susan
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:susan_smoothing(large,full):PASS:1388439559
-BFW_RES:susan_edges(large,full):PASS:233195296
-BFW_RES:susan_corners(large,full):PASS:79331531
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=light CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(large,light):PASS:942631616
+BFW_RES:ifft(large,light):PASS:942631616
 
 index: 36>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-index: 37<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(small,full):PASS:588053
-
-index: 37>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-index: 38<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/office/stringsearch
-cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:stringsearch(large,full):PASS:11239894
-
-index: 38>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 index: 39<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(small,full):PASS:178834505
+BFW_RES:susan_smoothing(small,full):PASS:91623123
+BFW_RES:susan_edges(small,full):PASS:8453203
+BFW_RES:susan_corners(small,full):PASS:4025475
 
 index: 39>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 40<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/network/dijkstra
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/automotive/susan
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:dijkstra(large,full):PASS:826061363
+BFW_RES:susan_smoothing(large,full):PASS:1388117022
+BFW_RES:susan_edges(large,full):PASS:232926151
+BFW_RES:susan_corners(large,full):PASS:79133710
 
 index: 40>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 41<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(small,full):PASS:1906134095
-BFW_RES:rijndael_dec(small,full):PASS:1906480498
+BFW_RES:stringsearch(small,full):PASS:524939
 
 index: 41>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 42<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/rijndael
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/office/stringsearch
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:rijndael_enc(large,full):PASS:19166094484
-BFW_RES:rijndael_dec(large,full):PASS:19062870507
+BFW_RES:stringsearch(large,full):PASS:11152962
 
 index: 42>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(small,full):PASS:257874854
+BFW_RES:dijkstra(small,full):PASS:178855064
 
 index: 43>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 44<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/security/sha
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/network/dijkstra
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:sha(large,full):PASS:2683205164
+BFW_RES:dijkstra(large,full):PASS:826104285
 
 index: 44>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 45<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(small,full):PASS:138370385
+BFW_RES:rijndael_enc(small,full):PASS:79580731
+BFW_RES:rijndael_dec(small,full):PASS:79171248
 
 index: 45>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 46<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/CRC32
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/rijndael
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:crc_32(large,full):PASS:2688608186
+BFW_RES:rijndael_enc(large,full):PASS:827615624
+BFW_RES:rijndael_dec(large,full):PASS:823051994
 
 index: 46>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 47<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(small,full):PASS:83071067
-BFW_RES:ifft(small,full):PASS:83071067
+BFW_RES:sha(small,full):PASS:47688504
 
 index: 47>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 index: 48<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-dir: /slowfs/us01dwt2p200/jlrao/dev/tools/32/sim/mibench/telecomm/FFT
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/security/sha
 cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
-BFW_RES:fft(large,full):PASS:942702661
-BFW_RES:ifft(large,full):PASS:942702661
+BFW_RES:sha(large,full):PASS:495510787
 
 index: 48>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 49<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
+
+index: 49>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 50<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/CRC32
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
+
+index: 50>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 51<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=small BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(small,full):PASS:83013993
+BFW_RES:ifft(small,full):PASS:83013993
+
+index: 51>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+index: 52<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+dir: /slowfs/us01dwt2p320/jlrao/dev/bfw/mibench_sim/telecomm/FFT
+cmd: touch bfw *.c &&  make -f Makefile.bfw DATASET=large BFW_MODE=full CFG=sa1core.cfg all > run_info 2>&1
+BFW_RES:fft(large,full):PASS:942641437
+BFW_RES:ifft(large,full):PASS:942641437
+
+index: 52>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
