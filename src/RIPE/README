@@ -1,5 +1,13 @@
 This directory contains the transplant and evaluation of RIPE(https://github.com/johnwilander/RIPE).
 
+result.ubuntu6.06: Apply RIPE on Ubuntu6.06 which is an age-old OS that dosen't have buffer overflow protection methods and all exploitations scuceed.
+
+result.ubunt12.04.no_bfprotector_nx_aslr: Apply RIPE on Ubuntu12.04 LTS which is an new OS with various buffer overflow, NX and ASLR etc. protections(https://wiki.ubuntu.com/Security/Features). But during the evaluation, buffer-protector, NX and ASLR are disabled via compiler/OS switches(-fno-buffer-protector, -z execstack, randomize_va_space=0). The other countermesures included in the kernel/gcc introduce interferences to RIPE attack scenarios(OK:  470  ,SOME:  0  ,FAIL:  380). Thus it's not appropriate for the base environment to evaluate security of standalone protection methods.
+
+result.ubunt12.04: Apply RIPE on Ubuntu12.04 with all default protection methods. buffer-protector, NX and ASLR are explicitly turned on via compiler/OS switches(-fbuffer-protector-all, -z noexecstack, randomize_va_space=2). 
+
+result.bfw: Apply RIPE to BFWindown on SimpleScalar(ARM)/GCC(CIL front-end). All buffers are protected from sequential writes caused overflow.
+
 Thanks to John Wilander for answering my questions!
 
 Jinli Rao <ary.xsnow@gmail.com>
