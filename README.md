@@ -94,7 +94,7 @@ make world.opt && make install && cd ..
   wget http://download.camlcity.org/download/findlib-1.5.5.tar.gz
   tar -zxvf findlib-1.5.5.tar.gz && cd findlib-1.5.5
   mkdir `ocamlfind printconf destdir` || true
-  echo `ocamlfind printconf destdir` >> /slowfs/us01dwt2p320/jlrao/dev/bfw/lib/ocaml/ld.conf
+  echo `ocamlfind printconf destdir` >> $LC_DIR/bfw/lib/ocaml/ld.conf
   cd ..
   ```
   + ocamlgraph-1.8.6
